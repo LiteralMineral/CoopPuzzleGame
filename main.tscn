@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://6gw6jyjhd7uv"]
+
+[ext_resource type="Script" path="res://main.cs" id="1_1obmb"]
+[ext_resource type="Texture2D" uid="uid://6r0oe0lu33gt" path="res://icon.svg" id="2_yylq0"]
+[ext_resource type="Script" path="res://Icon.cs" id="3_agwj3"]
+[ext_resource type="Texture2D" uid="uid://rxnrao340n05" path="res://bluestar.svg" id="4_jvk8x"]
+[ext_resource type="Script" path="res://bluestar.cs" id="5_6nl3n"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_1obmb")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(152, 141)
+texture = ExtResource("2_yylq0")
+script = ExtResource("3_agwj3")
+
+[node name="Bluestar" type="Sprite2D" parent="."]
+position = Vector2(658.75, 160)
+scale = Vector2(0.906452, 1)
+texture = ExtResource("4_jvk8x")
+script = ExtResource("5_6nl3n")
