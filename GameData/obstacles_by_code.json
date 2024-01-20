@@ -1,0 +1,82 @@
+{
+  "0": {
+    "0": "BaseLockedDoor_0",
+    "1": "BaseLockedDoor_1",
+    "2": "BaseLockedDoor_2",
+    "3": "BaseLockedDoor_3",
+    "4": "BaseLockedDoor_4",
+    "5": "BaseLockedDoor_5",
+    "6": "BaseLockedDoor_6",
+    "7": "BaseLockedDoor_7"
+  },
+  "8": {
+    "0": "PhysicalAbility_0",
+    "1": "PhysicalAbility_1",
+    "2": "PhysicalAbility_2",
+    "3": "PhysicalAbility_3",
+    "4": "PhysicalAbility_4",
+    "5": "PhysicalAbility_5",
+    "6": "PhysicalAbility_6",
+    "7": "PhysicalAbility_7"
+  },
+  "16": {
+    "0": "Terrain_0",
+    "1": "Terrain_1",
+    "2": "Terrain_2",
+    "3": "Terrain_3",
+    "4": "Terrain_4",
+    "5": "Terrain_5",
+    "6": "Terrain_6",
+    "7": "Terrain_7"
+  },
+  "24": {
+    "0": "ElementalHazard_0",
+    "1": "ElementalHazard_1",
+    "2": "ElementalHazard_2",
+    "3": "ElementalHazard_3",
+    "4": "ElementalHazard_4",
+    "5": "ElementalHazard_5",
+    "6": "ElementalHazard_6",
+    "7": "ElementalHazard_7"
+  },
+  "32": {
+    "0": "Combat_0",
+    "1": "Combat_1",
+    "2": "Combat_2",
+    "3": "Combat_3",
+    "4": "Combat_4",
+    "5": "Combat_5",
+    "6": "Combat_6",
+    "7": "Combat_7"
+  },
+  "40": {
+    "0": "Hidden_0",
+    "1": "Hidden_1",
+    "2": "Hidden_2",
+    "3": "Hidden_3",
+    "4": "Hidden_4",
+    "5": "Hidden_5",
+    "6": "Hidden_6",
+    "7": "Hidden_7"
+  },
+  "48": {
+    "0": "Narrative_0",
+    "1": "Narrative_1",
+    "2": "Narrative_2",
+    "3": "Narrative_3",
+    "4": "Narrative_4",
+    "5": "Narrative_5",
+    "6": "Narrative_6",
+    "7": "Narrative_7"
+  },
+  "56": {
+    "0": "Controls_0",
+    "1": "Controls_1",
+    "2": "Controls_2",
+    "3": "Controls_3",
+    "4": "Controls_4",
+    "5": "Controls_5",
+    "6": "Controls_6",
+    "7": "Controls_7"
+  }
+}

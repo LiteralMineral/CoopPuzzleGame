@@ -1,0 +1,82 @@
+{
+  "obstacle_category_0": {
+    "obstacle_option_0": 0,
+    "obstacle_option_1": 1,
+    "obstacle_option_2": 2,
+    "obstacle_option_3": 3,
+    "obstacle_option_4": 4,
+    "obstacle_option_5": 5,
+    "obstacle_option_6": 6,
+    "obstacle_option_7": 7
+  },
+  "obstacle_category_1": {
+    "obstacle_option_0": 8,
+    "obstacle_option_1": 9,
+    "obstacle_option_2": 10,
+    "obstacle_option_3": 11,
+    "obstacle_option_4": 12,
+    "obstacle_option_5": 13,
+    "obstacle_option_6": 14,
+    "obstacle_option_7": 15
+  },
+  "obstacle_category_2": {
+    "obstacle_option_0": 16,
+    "obstacle_option_1": 17,
+    "obstacle_option_2": 18,
+    "obstacle_option_3": 19,
+    "obstacle_option_4": 20,
+    "obstacle_option_5": 21,
+    "obstacle_option_6": 22,
+    "obstacle_option_7": 23
+  },
+  "obstacle_category_3": {
+    "obstacle_option_0": 24,
+    "obstacle_option_1": 25,
+    "obstacle_option_2": 26,
+    "obstacle_option_3": 27,
+    "obstacle_option_4": 28,
+    "obstacle_option_5": 29,
+    "obstacle_option_6": 30,
+    "obstacle_option_7": 31
+  },
+  "obstacle_category_4": {
+    "obstacle_option_0": 32,
+    "obstacle_option_1": 33,
+    "obstacle_option_2": 34,
+    "obstacle_option_3": 35,
+    "obstacle_option_4": 36,
+    "obstacle_option_5": 37,
+    "obstacle_option_6": 38,
+    "obstacle_option_7": 39
+  },
+  "obstacle_category_5": {
+    "obstacle_option_0": 40,
+    "obstacle_option_1": 41,
+    "obstacle_option_2": 42,
+    "obstacle_option_3": 43,
+    "obstacle_option_4": 44,
+    "obstacle_option_5": 45,
+    "obstacle_option_6": 46,
+    "obstacle_option_7": 47
+  },
+  "obstacle_category_6": {
+    "obstacle_option_0": 48,
+    "obstacle_option_1": 49,
+    "obstacle_option_2": 50,
+    "obstacle_option_3": 51,
+    "obstacle_option_4": 52,
+    "obstacle_option_5": 53,
+    "obstacle_option_6": 54,
+    "obstacle_option_7": 55
+  },
+  "obstacle_category_7": {
+    "obstacle_option_0": 56,
+    "obstacle_option_1": 57,
+    "obstacle_option_2": 58,
+    "obstacle_option_3": 59,
+    "obstacle_option_4": 60,
+    "obstacle_option_5": 61,
+    "obstacle_option_6": 62,
+    "obstacle_option_7": 63
+  }
+}

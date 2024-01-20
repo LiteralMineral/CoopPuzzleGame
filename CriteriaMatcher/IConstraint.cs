@@ -14,9 +14,22 @@ namespace CoopPuzzleGame.CriteriaMatcher
         public Func<T, bool> Rule();
 
         // allows different rules to be produced
-        public Func<T, bool> Rule(int ruleId);
+        //public Func<T, bool> Rule(int ruleId);
 
 
+
+
+    }
+
+    public interface IRuleSet<T>
+    {
+
+        // where all the rules will be stored.
+        public Dictionary<string, IConstraint<T>> Rulebook();
+
+
+        // allows rules to be accessed
+        public Func<T, bool> Rule(string name);
 
 
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoopPuzzleGame.CriteriaMatcher;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,21 +7,27 @@ using System.Threading.Tasks;
 
 namespace CoopPuzzleGame.PuzzleGeneration
 {
-    public class PuzzleKey : PuzzleElement, IComparer<PuzzleElement>
+    public class BasePuzzleKey : PuzzleElement, IComparer<PuzzleElement>
     {
+
+        
+        public BasePuzzleKey(int id) : base(id)
+        {
+        }
+
         int locationID
         { get; set; }
 
-        ObstacleProfile
+        ObstacleProfile _obstacles;
+        public ObstacleProfile Obstacles { get { return _obstacles; } }
 
-        List<int> operandIDs = new List<int>();
 
-        public override int CompareTo(PuzzleElement other)
+        public int CompareTo(PuzzleElement other)
         {
             throw new NotImplementedException();
         }
 
-        public override bool Equals(PuzzleElement other)
+        public  bool Equals(PuzzleElement other)
         {
             throw new NotImplementedException();
         }
@@ -30,5 +37,8 @@ namespace CoopPuzzleGame.PuzzleGeneration
 
             throw new NotImplementedException();
         }
+
+
+
     }
 }

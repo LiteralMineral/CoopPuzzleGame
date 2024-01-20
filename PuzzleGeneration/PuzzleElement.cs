@@ -20,10 +20,14 @@ namespace CoopPuzzleGame.PuzzleGeneration
         }
 
         public bool Equals(PuzzleElement other)
-            => _id == other.ID;
-        public int CompareTo(PuzzleElement other)
-            => _id.CompareTo(other._id);
+        {
+            return _id == other.ID;
+        }
 
+        public int CompareTo(PuzzleElement other)
+        {
+            return _id.CompareTo(other._id);
+        }
     }
 
 

@@ -7,6 +7,7 @@ public partial class Icon : Sprite2D
 	public override void _Ready()
 	{
 		int i = 42;
+		
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

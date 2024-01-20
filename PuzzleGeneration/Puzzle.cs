@@ -4,10 +4,10 @@ using System.Linq;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-using Algorithms.Graphs;
-using DataStructures.Graphs;
-using DataStructures.Heaps;
-using QuickGraph.Serialization.DirectedGraphML;
+//using Algorithms.Graphs;
+//using DataStructures.Graphs;
+//using DataStructures.Heaps;
+//using QuickGraph.Serialization.DirectedGraphML;
 
 namespace CoopPuzzleGame.PuzzleGeneration
 {
@@ -37,34 +37,35 @@ namespace CoopPuzzleGame.PuzzleGeneration
 
 
 
-
-
-
         // PuzzleElement instance Fields
+        Dictionary<int, BasePuzzleKey> _keys;
+        Dictionary<int, BasePuzzleLock> _locks;
+        Dictionary<int, Location> _locations;
+        Dictionary<int, Character> _characters;
+        Dictionary<int, string> _obstacles;
+        
 
-        List<PuzzleKey> _keys;
-        List<PuzzleLock> _locks;
-        List<Location> _locations;
-        List<Character> _characters;
-        List<string> _obstacles;
+
+
 
 
         // PuzzleTopology
-        IWeightedGraph<Location> _baseGraph;
-        Dictionary<Character, DirectedSparseGraph<int>> _characterAccessGraphs;
+        //DirectedWeightedSparseGraph<Location> _baseGraph;
+        //Dictionary<int, DirectedSparseGraph<int>> _characterAccessGraphs;
 
 
         // Predetermined solution
-        List<PuzzleKey> _solution;
+        List<BasePuzzleKey> _solution;
 
 
         // Properties of Puzzle for access
-        //public Dictionary<int, PuzzleKey> Keys;
-        //public Dictionary<int, PuzzleLock> Locks;
+        public Dictionary<int, BasePuzzleKey> Keys;
+        public Dictionary<int, BasePuzzleLock> Locks;
         public Dictionary<int, Location> Locations;
         public Dictionary<int, Character> Characters;
-        public IWeightedGraph<int> BaseGraph;
-        public Dictionary<int, IWeightedGraph<int>> CharacterAccessGraphs;
+
+        //public DirectedWeightedSparseGraph<Location> BaseGraph { get { return _baseGraph; } }
+        //public Dictionary<int, DirectedSparseGraph<int>> CharacterAccessGraphs { get { return _characterAccessGraphs; } }
         public Dictionary<int, string> Obstacles;
         public List<int> Solution;
         public int NumPlayers { get { return _characters.Count(); } }
@@ -95,19 +96,14 @@ namespace CoopPuzzleGame.PuzzleGeneration
             int currId;
 
             // make the components
-            _obstacles = new Dictionary<int, string>();
-            _characters = new Dictionary<int, Character>();
-            _keys = new Dictionary<int, PuzzleKey>();
-            _locks = new Dictionary<int, PuzzleLock>();
-            _locations = new Dictionary<int, Location>();
+            this._obstacles = new Dictionary<int, string>();
+            this._characters = new Dictionary<int, Character>();
+            this._keys = new Dictionary<int, BasePuzzleKey>();
+            this._locks = new Dictionary<int, BasePuzzleLock>();
+            this._locations = new Dictionary<int, Location>();
 
-            _locations.
-
-
-
-
-            _baseGraph = new DirectedWeightedSparseGraph<int>(graphSize);
-            _characterAccessGraphs = new Dictionary<int, DirectedSparseGraph<int>>();
+            //this._baseGraph = new DirectedWeightedSparseGraph<Location>((uint)graphSize);
+            //this._characterAccessGraphs = new Dictionary<int, DirectedSparseGraph<int>>();
 
 
             // adding all the location ids to the 
@@ -186,7 +182,7 @@ namespace CoopPuzzleGame.PuzzleGeneration
         {
 
             // assumes the graph started as a sparse one, but has all of its vertices
-            BinaryMinHeap<WeightedEdge<int>> edges = new BinaryMinHeap<WeightedEdge<int>>();
+            //BinaryMinHeap<WeightedEdge<int>> edges = new BinaryMinHeap<WeightedEdge<int>>();
             List<int> vertexKeys = _locations.Keys.ToList();
 
             List<int> lockIDs = _locks.Keys.ToList(); // get the list of lockIDs
@@ -204,19 +200,17 @@ namespace CoopPuzzleGame.PuzzleGeneration
             {
                 srcID = vertexKeys.ElementAt(random.Next(len));
                 dstID = (srcID + random.Next(len - 1)) % len;
-                edges.Add(new WeightedEdge<int>(srcID, dstID, lockID)); // add edge
+                //edges.Add(new WeightedEdge<int>(srcID, dstID, lockID)); // add edge
             }
 
 
 
 
             // add the locks to the graph
-            while (edges.Count > 0)
-            {
+            //while (edges.Count > 0)
+            //{
 
-            }
-
-
+            //}
 
 
 
@@ -224,7 +218,9 @@ namespace CoopPuzzleGame.PuzzleGeneration
 
 
 
-            return null;
+
+
+            //return null;
         }
 
 

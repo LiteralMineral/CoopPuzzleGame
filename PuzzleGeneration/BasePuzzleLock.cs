@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace CoopPuzzleGame.PuzzleGeneration
 {
     // This will be the 
-    public class BasePuzzleLock : PuzzleElement, IConstraint<BasePuzzleLock>
+    public class BasePuzzleLock : PuzzleElement
     {
 
 
@@ -22,10 +22,10 @@ namespace CoopPuzzleGame.PuzzleGeneration
         // keys that match to this lock
         List<int> _keyIDs;
 
+        // store the state of the lock
+        Dictionary<string, bool> _state;
 
-        ObstacleProfile _obstacles;
-        public ObstacleProfile Obstacles { get { return _obstacles; } }
-        public List<int> ActiveObstacles { get { return _obstacles.ActiveProfile; } }
+        ObstacleCode _obstacles;
 
 
 
@@ -81,31 +81,12 @@ namespace CoopPuzzleGame.PuzzleGeneration
         */
 
 
-        public PuzzleLock(int id, List<int> keyIds) : base(id)
+        public BasePuzzleLock(int id, List<int> keyIds, ObstacleCode obst) : base(id)
         {
+
 
 
         }
 
-
-
-
-        // just pass along the data
-        public void UpdateActiveObstacles(ObstacleProfile incomingSuppression)
-        {
-            _obstacles.UpdateActiveProfile(incomingSuppression);
-
-
-        }
-
-        public Func<BasePuzzleLock, bool> Rule()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Func<BasePuzzleLock, bool> Rule(int ruleId)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

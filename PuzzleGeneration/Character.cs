@@ -49,12 +49,12 @@ namespace CoopPuzzleGame.PuzzleGeneration
 
         }
 
-        public override bool Equals(PuzzleElement other)
+        public  bool Equals(PuzzleElement other)
         {
             throw new NotImplementedException();
         }
 
-        public override int CompareTo(PuzzleElement other)
+        public  int CompareTo(PuzzleElement other)
         {
             throw new NotImplementedException();
         }

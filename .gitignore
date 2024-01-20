@@ -15,32 +15,7 @@ data_*/
 mono_crash.*.json
 
 # for excluding device-specific launch settings
-*.json
+#Properties/.json
 .vs/
 *.user
 Properties/
-
-
-# excluding files from the imported datastructure and algorithms library, at least at this step
-C-Sharp-Algorithms-1.0/Algorithms/Common
-C-Sharp-Algorithms-1.0/Algorithms/Numeric
-C-Sharp-Algorithms-1.0/Algorithms/Search
-C-Sharp-Algorithms-1.0/Algorithms/Sorting
-C-Sharp-Algorithms-1.0/Algorithms/Strings
-C-Sharp-Algorithms-1.0/Algorithms/Trees
-
-C-Sharp-Algorithms-1.0/DataStructures/Common
-C-Sharp-Algorithms-1.0/DataStructures/Dictionaries
-C-Sharp-Algorithms-1.0/DataStructures/Hashing
-C-Sharp-Algorithms-1.0/DataStructures/Lists
-C-Sharp-Algorithms-1.0/DataStructures/SortedCollections
-C-Sharp-Algorithms-1.0/DataStructures/Trees
-
-C-Sharp-Algorithms-1.0/UnitTest
-
-
-
-
-
-
-
